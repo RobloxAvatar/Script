@@ -2,7 +2,9 @@
 
 local cmds = {}
 
-table.insert(game:HttpGet('https://raw.githubusercontent.com/RobloxAvatar/Script/main/Cmds.lua', true), cmds)
+if cmds[1] == nil then
+    return table.insert(game:HttpGet('https://raw.githubusercontent.com/RobloxAvatar/Script/main/Cmds.lua', true), cmds) 
+end
 
 print(cmds[1])
 
