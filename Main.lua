@@ -1,4 +1,8 @@
-local cmds = {game:HttpGet('https://raw.githubusercontent.com/RobloxAvatar/Script/main/Cmds.lua', true)}
+local cmds = {}
+
+table.insert(game:HttpGet('https://raw.githubusercontent.com/RobloxAvatar/Script/main/Cmds.lua', true), cmds)
+
+print(cmds[1])
 
 local prefix = '!'
 
