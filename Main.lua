@@ -1,3 +1,5 @@
+--// CLIENT SIDED ONLY
+
 local cmds = {}
 
 table.insert(game:HttpGet('https://raw.githubusercontent.com/RobloxAvatar/Script/main/Cmds.lua', true), cmds)
